@@ -1,7 +1,7 @@
 Bootstrap
 =========
 
-Bootstrap is a simple bootstrapper for Windows Phone applications. It is a template that makes it easy to start build applications, without having to do a lot of legwork. Bootstrap includes many of the common things Windows Phone applications need, such as the [Windows Phone Toolkit](http://phone.codeplex.com), efficient error handling, navigation transitions, and more.
+Bootstrap is a simple bootstrapper for Windows Phone applications. It is a template that makes it easy to start building applications, without having to do a lot of legwork. Bootstrap includes many of the common things Windows Phone applications need, such as the [Windows Phone Toolkit](http://phone.codeplex.com), efficient error handling, navigation transitions, and more.
 
 
 Features
