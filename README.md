@@ -25,7 +25,7 @@ Bootstrap includes the following features that most Windows Phone applications n
 Getting Started
 ===============
 
-To get started using Bootstrap for a new Windows Phone application, begin by downloading or cloning this repository. Inside the default Bootstrap folder, there is a command called `setup.bat` that will prompt you for your application's name and rename all instances of "Bootstrap" to your application's name.
+To get started using Bootstrap for a new Windows Phone application, begin by downloading or cloning this repository. Inside the default Bootstrap folder, there is a command called `setup.bat` that will prompt you for your application's name and rename all instances of "Bootstrap" to your application's name. Once the rename is complete, you are ready to start working on the fun part of your Windows Phone application.
 
 
 License
