@@ -17,6 +17,9 @@ Bootstrap includes the following features that most Windows Phone applications n
 * IsolatedStorageHelper for storing and retreiving data
 * Prompt for Windows Phone Store review after 3 days
 * Removal of Visual Studio default template bloat
+* MetroGridHelper overlay for UI design
+* YourLastAboutDialog about dialog
+* GlobalLoading visual loading indicator
 
 
 License
