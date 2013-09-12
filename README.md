@@ -19,7 +19,7 @@ Bootstrap includes the following features that most Windows Phone applications n
 * Removal of Visual Studio default template bloat
 * [MetroGridHelper](http://www.jeff.wilcox.name/2011/10/metrogridhelper) overlay for UI design
 * [YourLastAboutDialog](http://ylad.codeplex.com) about dialog
-* [GlobalLoading visual](http://www.jeff.wilcox.name/2011/07/creating-a-global-progressindicator-experience-using-the-windows-phone-7-1-sdk-beta-2/) loading indicator
+* [GlobalLoading](http://www.jeff.wilcox.name/2011/07/creating-a-global-progressindicator-experience-using-the-windows-phone-7-1-sdk-beta-2/) visual loading indicator
 
 
 Getting Started
