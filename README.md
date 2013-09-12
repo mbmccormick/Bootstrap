@@ -1,7 +1,7 @@
 Bootstrap
 =========
 
-Bootstrap is a simple bootstrapper for Windows Phone applications. It is a template that makes it easy to start build applications, without having to do a lot of legwork. Bootstrap includes many of the common things Windows Phone applications need, such as the Windows Phone Toolkit, efficient error handling, navigation transitions, and more.
+Bootstrap is a simple bootstrapper for Windows Phone applications. It is a template that makes it easy to start build applications, without having to do a lot of legwork. Bootstrap includes many of the common things Windows Phone applications need, such as the [Windows Phone Toolkit](http://phone.codeplex.com), efficient error handling, navigation transitions, and more.
 
 
 Features
@@ -10,16 +10,16 @@ Features
 Bootstrap includes the following features that most Windows Phone applications need:
 
 * Windows Phone Toolkit controls
-* RestSharp library
-* LittleWatson error handling and reporting
+* [RestSharp](http://restsharp.org) library
+* [LittleWatson](http://blogs.msdn.com/b/andypennell/archive/2010/11/01/error-reporting-on-windows-phone-7.aspx) error handling and reporting
 * Visual loading indicator wireup
 * Databound list control wireup
 * IsolatedStorageHelper for storing and retreiving data
 * Prompt for Windows Phone Store review after 3 days
 * Removal of Visual Studio default template bloat
-* MetroGridHelper overlay for UI design
-* YourLastAboutDialog about dialog
-* GlobalLoading visual loading indicator
+* [MetroGridHelper](http://www.jeff.wilcox.name/2011/10/metrogridhelper) overlay for UI design
+* [YourLastAboutDialog](http://ylad.codeplex.com) about dialog
+* [GlobalLoading visual](http://www.jeff.wilcox.name/2011/07/creating-a-global-progressindicator-experience-using-the-windows-phone-7-1-sdk-beta-2/) loading indicator
 
 
 Getting Started
