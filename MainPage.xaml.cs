@@ -31,6 +31,24 @@ namespace Bootstrap
             App.UnhandledExceptionHandled += new EventHandler<ApplicationUnhandledExceptionEventArgs>(App_UnhandledExceptionHandled);
 
             Items = new ObservableCollection<string>();
+
+            this.BuildApplicationBar();
+        }
+
+        private void BuildApplicationBar()
+        {
+            //ApplicationBarIconButton refresh = new ApplicationBarIconButton();
+            //refresh.IconUri = new Uri("/Resources/refresh.png", UriKind.RelativeOrAbsolute);
+            //refresh.Text = "refresh";
+            //refresh.Click += btnRefresh_Click;
+
+            //ApplicationBar.Buttons.Add(add);
+            
+            ApplicationBarMenuItem about = new ApplicationBarMenuItem();
+            about.Text = "about";
+            about.Click += mnuAbout_Click;
+
+            ApplicationBar.MenuItems.Add(about);
         }
 
         private void App_UnhandledExceptionHandled(object sender, ApplicationUnhandledExceptionEventArgs e)
@@ -40,7 +58,7 @@ namespace Bootstrap
                 ToggleLoadingText();
                 ToggleEmptyText();
 
-                GlobalLoading.Instance.IsLoading = true;
+                GlobalLoading.Instance.IsLoading = false;
             });
         }
 
@@ -92,6 +110,14 @@ namespace Bootstrap
                 this.txtEmpty.Visibility = System.Windows.Visibility.Visible;
             else
                 this.txtEmpty.Visibility = System.Windows.Visibility.Collapsed;
+        }
+
+        private void mnuAbout_Click(object sender, EventArgs e)
+        {
+            SmartDispatcher.BeginInvoke(() =>
+            {
+                NavigationService.Navigate(new Uri("/YourLastAboutDialog;component/AboutPage.xaml", UriKind.Relative));
+            });
         }
     }
 }

@@ -2,8 +2,7 @@
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
   <App xmlns="" ProductID="{323ed406-9da6-41fc-916c-95f11ea2a3e1}" Title="Bootstrap" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="" Description="Bootstrap for Windows Phone" Publisher="" PublisherID="{4af0212d-81cc-440a-88ac-8704dff68d18}">
-    <IconPath IsRelative="true" IsResource="false">
-    </IconPath>
+    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
     </Capabilities>
@@ -13,12 +12,10 @@
     <Tokens>
       <PrimaryToken TokenID="BootstrapToken" TaskName="_default">
         <TemplateFlip>
-          <SmallImageURI IsRelative="true" IsResource="false">
-          </SmallImageURI>
+          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
           <Count>0</Count>
-          <BackgroundImageURI IsRelative="true" IsResource="false">
-          </BackgroundImageURI>
-          <Title>Bootstrap</Title>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
+          <Title>Seattle 311</Title>
           <BackContent>
           </BackContent>
           <BackBackgroundImageURI>
