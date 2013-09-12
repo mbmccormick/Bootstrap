@@ -80,12 +80,12 @@ namespace Bootstrap
 
         private void Application_Deactivated(object sender, DeactivatedEventArgs e)
         {
-            // save data
+            // TODO: save data
         }
 
         private void Application_Closing(object sender, ClosingEventArgs e)
         {
-            // save data
+            // TODO: save data
         }
 
         private void RootFrame_NavigationFailed(object sender, NavigationFailedEventArgs e)
@@ -136,7 +136,7 @@ namespace Bootstrap
                 CustomMessageBox messageBox = new CustomMessageBox()
                 {
                     Caption = "Review Bootstrap",
-                    Message = "It's been a few days since you downloaded Hacker News. Would you like to write a review for it in the Windows Phone Store?",
+                    Message = "It's been a few days since you downloaded Bootstrap. Would you like to write a review for it in the Windows Phone Store?",
                     LeftButtonContent = "yes",
                     RightButtonContent = "no",
                     IsFullScreen = false
@@ -168,10 +168,8 @@ namespace Bootstrap
 
         #region Phone application initialization
 
-        // Avoid double-initialization
         private bool phoneApplicationInitialized = false;
 
-        // Do not add any additional code to this method
         private void InitializePhoneApplication()
         {
             if (phoneApplicationInitialized)
@@ -188,11 +186,12 @@ namespace Bootstrap
             // Handle reset requests for clearing the backstack
             RootFrame.Navigated += CheckForResetNavigation;
 
+            GlobalLoading.Instance.Initialize(RootFrame);
+
             // Ensure we don't initialize again
             phoneApplicationInitialized = true;
         }
 
-        // Do not add any additional code to this method
         private void CompleteInitializePhoneApplication(object sender, NavigationEventArgs e)
         {
             // Set the root visual to allow the application to render

@@ -16,7 +16,7 @@ namespace Bootstrap
 {
     public partial class MainPage : PhoneApplicationPage
     {
-        #region List Properties
+        #region Data Binding Properties
 
         public static ObservableCollection<string> Items { get; set; }
 
@@ -40,7 +40,7 @@ namespace Bootstrap
                 ToggleLoadingText();
                 ToggleEmptyText();
 
-                this.prgLoading.Visibility = System.Windows.Visibility.Collapsed;
+                GlobalLoading.Instance.IsLoading = true;
             });
         }
 
@@ -57,7 +57,7 @@ namespace Bootstrap
 
         private void LoadData()
         {
-            //this.prgLoading.Visibility = System.Windows.Visibility.Visible;
+            //GlobalLoading.Instance.IsLoading = true;
 
             //App.ServiceClient.GetItems((result) =>
             //{
@@ -75,7 +75,7 @@ namespace Bootstrap
             //        ToggleLoadingText();
             //        ToggleEmptyText();
 
-            //        this.prgLoading.Visibility = System.Windows.Visibility.Collapsed;
+            //        GlobalLoading.Instance.IsLoading = false;
             //    });
             //});
         }
